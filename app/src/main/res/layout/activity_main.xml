@@ -17,35 +17,19 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="@android:color/holo_green_dark"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:visibility="visible"
+            android:layout_weight="1" />
 
     </android.support.design.widget.AppBarLayout>
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_menu_edit"
-        app:backgroundTint="@android:color/holo_green_dark"
-        app:elevation="11dp" />
 
     <include layout="@layout/content_main"
         android:visibility="visible" />
 
     <WebView
-        android:id="@+id/webview"
+        android:id="@+id/activity_main_webview"
         android:layout_width="match_parent"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_marginTop="34dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        app:layout_anchorGravity="center_vertical|center_horizontal"
-        android:layout_gravity="center_vertical|left"
-        android:layout_height="400dp"
-        android:animateLayoutChanges="true"
-        android:clickable="false" />
+        android:layout_height="448dp"
+        android:layout_gravity="center" />
 </android.support.design.widget.CoordinatorLayout>
