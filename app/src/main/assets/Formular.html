@@ -14,10 +14,13 @@
 
 
 <body>
+<Font SIZE="5">
+  Bitte wählen Sie nun Ihren Studiengang.
+	<br><br>
 
   <form class="content" action="http://stundenplanung.eah-jena.de/studentset/" id="fSelect" method="get" target="ausgabe">
 	<label for="StgSelect">
-		Studiengang: 
+		Studiengang:
 		<select id="StgSelect" name="Studiengang" onchange='UpdateSemester(this)'>
 			<option value='AO(BA)'>Bachelor: &nbsp; Augenoptik</option>
 			<option value='BW(BA)'>Bachelor: &nbsp; Betriebswirtschaft</option>
@@ -57,12 +60,16 @@
 		</select>	
 	</label>
 
+	<br> <br>
+
 	<label for="SemesterSelect">
 		Semester:
 		<select id="SemesterSelect" name="Semester" onchange="UpdateGroup(this)">
 			<option>&nbsp;</option>
 		</select>
 	</label>
+
+	<br><br>
 
 	<label for="GroupSelect">
 		Gruppe:
@@ -74,26 +81,8 @@
 	<br> <br>
 
 	<label>
-               <input type="radio" name="type" value="table" checked="checked" /> 
                Wochenkalender für
                <select name="week">
-                      <option value="1">  				 1. SW (42. KW) 17.10.2016 - 22.10.2016</option>
-                      <option value="2">  				 2. SW (43. KW) 24.10.2016 - 29.10.2016</option>
-                      <option value="3">  				 3. SW (44. KW) 31.10.2016 - 05.11.2016</option>
-                      <option value="4">  				 4. SW (45. KW) 07.11.2016 - 12.11.2016</option>
-                      <option value="5">  				 5. SW (46. KW) 14.11.2016 - 19.11.2016</option>
-                      <option value="6">  				 6. SW (47. KW) 21.11.2016 - 26.11.2016</option>
-                      <option value="7">  				 7. SW (48. KW) 28.11.2016 - 03.12.2016</option>
-                      <option value="8">  				 8. SW (49. KW) 05.12.2016 - 10.12.2016</option>
-                      <option value="9">  				 9. SW (50. KW) 12.12.2016 - 17.12.2016</option>
-                      <option value="10">				10. SW (51. KW) 19.12.2016 - 24.12.2016</option>
-                      <option value="11">				11. SW (52. KW) 26.12.2016 - 31.12.2016</option>
-                      <option value="12">				12. SW ( 1. KW) 02.01.2017 - 07.01.2017</option>
-                      <option value="13">				13. SW ( 2. KW) 09.01.2017 - 14.01.2017</option>
-                      <option value="14">				14. SW ( 3. KW) 16.01.2017 - 21.01.2017</option>
-                      <option value="15">				15. SW ( 4. KW) 23.01.2017 - 28.01.2017</option>
-                      <option value="16">				16. SW ( 5. KW) 30.01.2017 - 04.02.2017</option>
-                      <option value="17">				17. SW ( 6. KW) 06.02.2017 - 11.02.2017</option>
                       <option value="1-17"   selected="selected" >	WS 2016/17  17.10.2016 - 12.02.2017    </option>
                </select>
 	</label>
@@ -104,6 +93,7 @@
 		<input type="submit" value="Anzeigen" />
 	</li>
    </form>
+</Font>
 
 </body>
 

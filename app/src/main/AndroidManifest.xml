@@ -6,20 +6,35 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo"
         android:label="EAH Stundenplan"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity
-            android:name=".MainActivity"
+            android:name=".Studiengang_auswahl_html"
             android:label="EAH Stundenplan"
             android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".Studiengang_auswahl_alternativ"
+            android:label="EAH Stundenplan">
+        </activity>
+
+        <activity
+            android:name=".abos"
+            android:label="Abbos">
+        </activity>
+
+        <activity
+            android:name=".plan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
